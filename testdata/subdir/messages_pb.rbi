@@ -411,7 +411,7 @@ class Testdata::Subdir::AllTypes
   def repeated_nested_value
   end
 
-  sig { params(value: ::Google::Protobuf::RepeatedField).void }
+  sig { params(value: ::Google::Protobuf::RepeatedField[T.nilable(Testdata::Subdir::IntegerMessage)]).void }
   def repeated_nested_value=(value)
   end
 
@@ -423,7 +423,7 @@ class Testdata::Subdir::AllTypes
   def repeated_int32_value
   end
 
-  sig { params(value: ::Google::Protobuf::RepeatedField).void }
+  sig { params(value: ::Google::Protobuf::RepeatedField[Integer]).void }
   def repeated_int32_value=(value)
   end
 
@@ -435,7 +435,7 @@ class Testdata::Subdir::AllTypes
   def repeated_enum
   end
 
-  sig { params(value: ::Google::Protobuf::RepeatedField).void }
+  sig { params(value: ::Google::Protobuf::RepeatedField[T.any(Symbol, String, Integer)]).void }
   def repeated_enum=(value)
   end
 
